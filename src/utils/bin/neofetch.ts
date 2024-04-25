@@ -131,11 +131,10 @@ const getInfo = () => {
 
 	message += `<span style="color: ${mainColor}">Host</span>: ${hostname}\n`;
 	message += `<span style="color: ${mainColor}">OS</span>: ${os}\n`;
-	message += `<span style="color: ${mainColor}">Packages</span>: ${
-		packages.length + devPackages.length
-	} (npm)\n`;
+	message += `<span style="color: ${mainColor}">Packages</span>: ${packages.length + devPackages.length
+		} (npm)\n`;
 	message += `<span style="color: ${mainColor}">Resolution</span>: ${resolution}\n`;
-	message += `<span style="color: ${mainColor}">Shell</span>: Destaq-web\n`;
+	message += `<span style="color: ${mainColor}">Shell</span>: zsh\n`;
 	message += `<span style="color: ${mainColor}">Theme</span>: ${theme}\n`;
 	message += `<span style="color: ${mainColor}">License</span>: ${packageJson.license}\n`;
 	message += `<span style="color: ${mainColor}">Version</span>: ${packageJson.version}\n`;

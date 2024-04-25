@@ -1,4 +1,4 @@
-# [Destaq | CLI Homepage](https://simonilincev.com/cli-homepage)
+# [terminal](https://mkdirhao.github.io/cli-homepage)
 
 A terminal-style startpage for all your browsing-related needs!
 
@@ -36,7 +36,7 @@ lcp --proxyUrl https://suggestqueries.google.com/
 ```
 
 <p align="center">
-  <img width="372" alt="image" src="https://github.com/Destaq/cli-homepage/assets/61620873/96bd0247-4ccd-4492-8df0-6d3796946363">
+  <img width="372" alt="image" src="https://github.com/mkdirhao/cli-homepage/assets/61620873/96bd0247-4ccd-4492-8df0-6d3796946363">
 </p>
 
 You can then use tab to cycle through / select suggestions.
@@ -47,10 +47,10 @@ Here's a sample of the `config.json` file:
 
 ```json5
 {
-  "bioUrl": "https://github.com/Destaq/Destaq/blob/master/README.md",
+  "bioUrl": "https://github.com/mkdirhao/mkdirhao/blob/master/README.md",
   "social": {
-    "github": "Destaq",
-    "linkedin": "simon-ilincev"
+    "github": "mkdirhao",
+    
   },
   "theme": "gruvboxdark"
   // full list in themes.json
@@ -70,4 +70,6 @@ Feel free to open pull requests or log issues!
 
 ## Credits
 
-Adapted from [Yassine Fathi's project](https://github.com/m4tt72/terminal).
+Adapted from
+[Yassine Fathi's project](https://github.com/m4tt72/terminal).
+[Destaq's project](https://github.com/Destaq/cli-homepage)

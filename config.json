@@ -1,9 +1,9 @@
 {
-  "bioUrl": "https://raw.githubusercontent.com/Destaq/destaq.github.io/master/misc/bio.html",
+  "bioUrl": "https://raw.githubusercontent.com/mkdirHao/mkdirhao/main/README.md",
   "social": {
-    "github": "Destaq",
-    "linkedin": "simon-ilincev"
+    "github": "mkdirhao"
+   
   },
-  "theme": "gruvboxdark",
+  "theme": "tokyonight",
   "border": true
 }

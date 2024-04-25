@@ -20,9 +20,11 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const email = async (args: string[]): Promise<string> => {
-	window.open("mail.google.com");
+	setTimeout(function() {
+	window.open("mailto:mkdirhao@qq.com");
+	},1000);
 
-	return "Opening Gmail...";
+	return "Opening mail...";
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
@@ -35,7 +37,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
 export const repo = async (args?: string[]): Promise<string> => {
 	setTimeout(function() {
-		window.open("https://github.com/Destaq/cli-homepage", "_blank");
+		window.open("https://github.com/mkdirhao/", "_blank");
 	}, 1000);
 
 	return "Opening repository...";
@@ -43,12 +45,15 @@ export const repo = async (args?: string[]): Promise<string> => {
 
 export const banner = (args?: string[]): string => {
 	return `
-██████╗ ███████╗███████╗████████╗ █████╗  ██████╗ 
-██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗
-██║  ██║█████╗  ███████╗   ██║   ███████║██║   ██║
-██║  ██║██╔══╝  ╚════██║   ██║   ██╔══██║██║▄▄ ██║
-██████╔╝███████╗███████║   ██║   ██║  ██║╚██████╔╝
-╚═════╝ ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚══▀▀═╝  v${packageJson.version}
+	██
+	░██
+	░██       ██████    ██████
+	░██████  ░░░░░░██  ██░░░░██
+	░██░░░██  ███████ ░██   ░██
+	░██  ░██ ██░░░░██ ░██   ░██
+	░██  ░██░░████████░░██████
+	░░   ░░  ░░░░░░░░  ░░░░░░						   
+	v${packageJson.version}
 
 Type 'help' to see list of available commands.
 

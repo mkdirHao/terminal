@@ -30,30 +30,4 @@ export const getQuote = async () => {
 	};
 };
 
-export const getSearchSuggestions = async (query: string) => {
-	if (query.length > 0) {
-		const url =
-			`http://localhost:8010/proxy/complete/search` +
-			`?output=toolbar&hl=en&q=${encodeURIComponent(query)}`;
-		const { data } = await axios.get(url);
 
-		// Convert data to JSON.
-		const json = xml2json(data, { compact: true, spaces: 4 });
-
-		// Parse JSON.
-		const topLevel = JSON.parse(json).toplevel;
-		if (Object.hasOwn(topLevel, "CompleteSuggestion")) {
-			try {
-				return JSON.parse(json).toplevel.CompleteSuggestion.map(
-					(suggestion: any) => suggestion.suggestion._attributes.data,
-				);
-			} catch (RuntimeError) {
-				return [];
-			}
-		} else {
-			return [];
-		}
-	} else {
-		return [];
-	}
-};
