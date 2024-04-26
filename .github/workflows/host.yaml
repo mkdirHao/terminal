@@ -42,6 +42,8 @@ jobs:
           git reset --hard origin/gh-pages
           touch .nojekyll
           git add .nojekyll 
-          git commit -m "Create .nojekyll file"
+          touch CNAME
+          echo www.mkdirhao.tech > CNAME
+          git commit -m "Create .nojekyll cname file"
           git push --set-upstream origin gh-pages
   
