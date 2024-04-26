@@ -7,7 +7,7 @@ export const Ps1 = () => {
 
 	useEffect(() => {
 		if (typeof window !== undefined) {
-			setHostname(window.location.hostname);
+			setHostname("hao");
 		}
 	}, []);
 
