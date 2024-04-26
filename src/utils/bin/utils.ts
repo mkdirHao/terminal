@@ -43,7 +43,7 @@ export const repo = async (args?: string[]): Promise<string> => {
 	return "Opening repository...";
 };
 
-export const banner = (args?: string[]): string => {
+export const hao = (args?: string[]): string => {
 	return `
 	██
 	░██
