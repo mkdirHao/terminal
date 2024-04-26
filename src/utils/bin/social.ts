@@ -5,4 +5,3 @@ export const github = async (args: string[]): Promise<string> => {
 
 	return "Opening GitHub...";
 };
-

@@ -20,15 +20,15 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const email = async (args: string[]): Promise<string> => {
-	setTimeout(function() {
-	window.open("mailto:mkdirhao@qq.com");
-	},1000);
+	setTimeout(function () {
+		window.open("mailto:mkdirhao@qq.com");
+	}, 1000);
 
 	return "Opening mail...";
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-	setTimeout(function() {
+	setTimeout(function () {
 		window.open("https://www.youtube.com/watch?v=4f4EbF-dS8w");
 	}, 1000);
 
@@ -36,7 +36,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 };
 
 export const repo = async (args?: string[]): Promise<string> => {
-	setTimeout(function() {
+	setTimeout(function () {
 		window.open("https://github.com/mkdirhao/", "_blank");
 	}, 1000);
 

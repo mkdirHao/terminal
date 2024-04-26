@@ -1,4 +1,3 @@
-
 export const search = async (args: string[]): Promise<string> => {
 	setTimeout(function () {
 		window.open(

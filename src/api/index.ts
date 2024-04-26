@@ -29,5 +29,3 @@ export const getQuote = async () => {
 		quote: `“${data.content}” — ${data.author}`,
 	};
 };
-
-
