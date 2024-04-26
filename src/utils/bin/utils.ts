@@ -27,20 +27,35 @@ export const email = async (args: string[]): Promise<string> => {
 	return "Opening mail...";
 };
 
+export const search = async (args: string[]): Promise<string> => {
+	setTimeout(function () {
+		window.open(
+			`https://www.google.com/search?q=${args.join(" ")}`,
+			"_blank",
+		);
+	}, 500);
+
+	return "Opening Google Search...";
+};
+
+export const open = async (args: string[]): Promise<string> => {
+	if (args.join("") != "") {
+		setTimeout(function () {
+			window.open(`https://${args.join("")}`, "_blank");
+		}, 1000);
+
+		return `opening ${args.join("")}`;
+	} else {
+		return "open nothing";
+	}
+};
+
 export const sudo = async (args?: string[]): Promise<string> => {
 	setTimeout(function () {
 		window.open("https://www.youtube.com/watch?v=4f4EbF-dS8w");
 	}, 1000);
 
 	return `Permission denied: unable to run the command '${args[0]}' as root.`;
-};
-
-export const repo = async (args?: string[]): Promise<string> => {
-	setTimeout(function () {
-		window.open("https://github.com/mkdirhao/", "_blank");
-	}, 1000);
-
-	return "Opening repository...";
 };
 
 export const hao = (args?: string[]): string => {

@@ -1,7 +1,7 @@
 {
-  "bioUrl": "https://raw.githubusercontent.com/mkdirHao/mkdirhao/main/README.md",
+  "githubBioUrl": "https://raw.githubusercontent.com/mkdirHao/mkdirhao/main/README.md",
   "social": {
-    "github": "https://github.com/mkdirhao",
+    "github": "mkdirhao",
     "blog" : "https://mkdirhao.tech"
   },
   "theme": "tokyonight",

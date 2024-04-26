@@ -1,8 +1,7 @@
 import axios from "axios";
-import { xml2json } from "xml-js";
 import config from "../../config.json";
 
-export const getProjects = async () => {
+export const getRepos = async () => {
 	const { data } = await axios.get(
 		`https://api.github.com/users/${config.social.github}/repos`,
 	);
@@ -10,16 +9,16 @@ export const getProjects = async () => {
 	return data;
 };
 
-export const getBio = async () => {
-	const { data } = await axios.get(config.bioUrl);
+export const getGithubBio = async () => {
+	const { data } = await axios.get(config.githubBioUrl);
 
 	return data;
 };
 
 export const getYiyan = async () => {
-	const { data } = await axios.get("https://v1.hitokoto.cn/?c=f&encode=text");
+	const { data } = await axios.get("https://v1.hitokoto.cn/");
 
-	return data;
+	return { yiyan: `“${data.hitokoto}” — ${data.from_who}` };
 };
 
 export const getWeather = async (city: string) => {
