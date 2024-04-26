@@ -8,6 +8,10 @@ on:
 
 jobs:
   publish:
+      # Deploy to the github-pages environment
+    environment:
+        name: github-pages
+        url: https://www.mkdirhao.tech
     runs-on: ubuntu-latest
     steps:
       - name: Check out
@@ -40,8 +44,16 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
           git reset --hard origin/gh-pages
-          touch .nojekyll
+          touch .nojekyl
           git add .nojekyll 
+          touch CNAME
+          echo www.mkdirhao.tech > CNAME
+          
           git commit -m "Create .nojekyll cname file"
           git push --set-upstream origin gh-pages
-  
+     
+
+   
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
