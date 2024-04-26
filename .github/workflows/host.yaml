@@ -44,10 +44,7 @@ jobs:
           git add .nojekyll 
           git commit -m "Create .nojekyll file"
           git push --set-upstream origin gh-pages
-    
-      - name: Deploy docs to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+  
       - name: Override page_url
         id: change-page-url
         run: echo "new_page_url=www.mkdirhao.tech" >> $GITHUB_OUTPUT
