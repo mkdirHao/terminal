@@ -28,14 +28,6 @@ npm build
 npm start
 ```
 
-
-
-<p align="center">
-  <img width="372" alt="image" src="https://github.com/mkdirhao/terminal/assets/61620873/96bd0247-4ccd-4492-8df0-6d3796946363">
-</p>
-
-You can then use tab to cycle through / select suggestions.
-
 ## Configuration
 
 Here's a sample of the `config.json` file:

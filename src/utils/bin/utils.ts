@@ -62,7 +62,7 @@ hello, here is mkdirhao.👋
 🚲:A man who enjoys cycling like the wind.
 📬:mail:mkdirhao@qq.com
 ======================================
-👉<a href="https://mkdirhao.github.io" target="_blank">blog</a>👉<a href="https://github.com/mkdirhao/" target="_blank">github</a>
+👉<a href="https://mkdirhao.tech" target="_blank">blog</a>👉<a href="https://github.com/mkdirhao/" target="_blank">github</a>
 ======================================
 `;
 };
