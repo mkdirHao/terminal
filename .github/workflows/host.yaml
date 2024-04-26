@@ -45,6 +45,7 @@ jobs:
           git commit -m "Create .nojekyll file"
           git push --set-upstream origin gh-pages
   
-      - name: Override page_url
-        id: change-page-url
-        run: echo "new_page_url=www.mkdirhao.tech" >> $GITHUB_OUTPUT
+     
+      environment:
+          name: production_environment
+          url: www.mkdirhao.tech
