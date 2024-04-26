@@ -1,5 +1,5 @@
-import { parse } from "path";
+import { getYiyan } from "../../api";
 
 export const random = async (args: string[]): Promise<number> => {
-	return Math.floor(Math.random());
+	return await getYiyan();
 };
