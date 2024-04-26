@@ -48,7 +48,7 @@ jobs:
           git add .nojekyll 
           touch CNAME
           echo www.mkdirhao.tech > CNAME
-          
+          git add CNAME
           git commit -m "Create .nojekyll cname file"
           git push --set-upstream origin gh-pages
      
