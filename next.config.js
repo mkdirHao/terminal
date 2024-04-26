@@ -1,3 +1,3 @@
 module.exports = {
-	basePath: "/cli-homepage",
+	basePath: "/terminal",
 };
