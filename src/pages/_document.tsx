@@ -95,10 +95,7 @@ class MyDocument extends Document {
 						content="/ms-icon-144x144.png"
 					/>
 					<meta name="theme-color" content="#D79921" />
-					<meta
-						name="description"
-						content="CLI Startpage | Simon Ilincev"
-					/>
+					<meta name="description" content="terminal" />
 				</Head>
 
 				<body>

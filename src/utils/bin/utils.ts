@@ -59,8 +59,9 @@ Type 'help' to see list of available commands.
 
 --
 hello, here is mkdirhao.👋
-🚲:A man who rides a bicycle like the wind.
+🚲:A man who enjoys cycling like the wind..
 📬:mail:mkdirhao@qq.com
+<a href="https://mkdirhao.github.io" target="_blank">blog</a>
 --
 `;
 };

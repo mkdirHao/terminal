@@ -31,7 +31,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
 	return (
 		<>
 			<Head>
-				<title>CLI Startpage</title>
+				<title>terminal</title>
 			</Head>
 
 			<div

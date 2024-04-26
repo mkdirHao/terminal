@@ -1,6 +1,6 @@
 {
-  "name": "cli-homepage | Simon Ilincev",
-  "short_name": "cli-homepage",
+  "name": "terminal",
+  "short_name": "terminal",
   "theme_color": "#D79921",
   "background_color": "#262626",
   "display": "fullscreen",
