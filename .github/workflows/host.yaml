@@ -45,7 +45,7 @@ jobs:
           git checkout gh-pages
           git reset --hard origin/gh-pages
           touch .nojekyl
-          git add .nojekyll 
+          git add .nojekyl
           touch CNAME
           echo www.mkdirhao.tech > CNAME
           git add CNAME
