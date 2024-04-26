@@ -45,7 +45,3 @@ jobs:
           git commit -m "Create .nojekyll file"
           git push --set-upstream origin gh-pages
   
-     
-      environment:
-          name: production_environment
-          url: www.mkdirhao.tech
