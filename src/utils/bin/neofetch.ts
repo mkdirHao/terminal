@@ -152,7 +152,7 @@ export const neofetch = async (args?: string[]): Promise<string> => {
 	const info = getInfo();
 
 	return `
-  <table>
+  <table class="text-xss md:text-base">
     <tr>
       <td>${art}</td>
       <td>${info}</td>
