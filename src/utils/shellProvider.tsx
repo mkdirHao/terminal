@@ -97,13 +97,13 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({ children }) => {
 		_setLastCommandIndex(index);
 	};
 
-	// const executeDynamic = async () => {
-	// 	const [cmd, ...args] = dynamicCommand.split(" ").slice(1);
-	// 	if (cmd === "search" && args.length > 0) {
-	// 		const output = await bin["searchSuggestions"](args);
-	// 		setDynamicHistory(output);
-	// 	}
-	// };
+	const executeDynamic = async () => {
+		const [cmd, ...args] = dynamicCommand.split(" ").slice(1);
+		// if (cmd === "search" && args.length > 0) {
+		// 	const output = await bin["searchSuggestions"](args);
+		// 	setDynamicHistory(output);
+		// }
+	};
 
 	const execute = async () => {
 		const [cmd, ...args] = command.split(" ").slice(1);
@@ -152,7 +152,7 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({ children }) => {
 				setDynamicHistory,
 				setLastCommandIndex,
 				execute,
-				//executeDynamic,
+				executeDynamic,
 				clearHistory,
 				clearDynamicHistory,
 			}}
