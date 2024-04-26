@@ -29,7 +29,7 @@ export const email = async (args: string[]): Promise<string> => {
 
 export const sudo = async (args?: string[]): Promise<string> => {
 	setTimeout(function() {
-		window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+		window.open("https://www.youtube.com/watch?v=4f4EbF-dS8w");
 	}, 1000);
 
 	return `Permission denied: unable to run the command '${args[0]}' as root.`;
@@ -58,10 +58,9 @@ export const banner = (args?: string[]): string => {
 Type 'help' to see list of available commands.
 
 --
-The project is open-source 🎉 type 'repo' to check out the repository.
-
-New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/Destaq/cli-homepage/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
+hello, here is mkdirhao.👋
+🚲:A man who rides a bicycle like the wind.
+📬:mail:mkdirhao@qq.com
 --
 `;
 };
