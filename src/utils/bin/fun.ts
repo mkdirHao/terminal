@@ -20,6 +20,6 @@ export const random = async (args: string[]): Promise<string> => {
 	let output = "";
 	const quoto = (await getQuote()).quote;
 	const yiyan = (await getYiyan()).yiyan;
-	output = "EN quoto: " + quoto + "\n" + "CN:yiyan " + yiyan;
+	output = "EN quoto: " + quoto + "\n" + "CN yiyan: " + yiyan;
 	return output;
 };
